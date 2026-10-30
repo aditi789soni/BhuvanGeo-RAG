@@ -43,13 +43,15 @@ st.markdown(
     /* Theme Header */
     .main-title {
         font-size: 2.2rem;
-        font-weight: 700;
-        color: #0f2b48;
+        font-weight: 800;
+        background: linear-gradient(120deg, #38bdf8 0%, #818cf8 50%, #fb923c 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
         margin-bottom: 0.2rem;
     }
     .sub-title {
         font-size: 1.05rem;
-        color: #3b5266;
+        color: #94a3b8;
         margin-bottom: 1.5rem;
     }
     .badge-isro {
@@ -63,7 +65,7 @@ st.markdown(
         margin-bottom: 0.5rem;
     }
     .citation-card {
-        background-color: #f8fafc;
+        background-color: rgba(37, 99, 235, 0.08);
         border-left: 4px solid #2563eb;
         padding: 12px 16px;
         margin-bottom: 10px;
@@ -72,20 +74,20 @@ st.markdown(
     }
     .citation-header {
         font-weight: 600;
-        color: #1e3a8a;
+        color: #38bdf8;
         margin-bottom: 4px;
     }
     .citation-excerpt {
-        color: #334155;
+        color: inherit;
         font-style: italic;
-        background: #ffffff;
+        background: rgba(255, 255, 255, 0.05);
         padding: 6px 10px;
         border-radius: 4px;
-        border: 1px dashed #cbd5e1;
+        border: 1px dashed rgba(148, 163, 184, 0.3);
     }
     .metric-box {
-        background: #f1f5f9;
-        border: 1px solid #e2e8f0;
+        background: rgba(148, 163, 184, 0.08);
+        border: 1px solid rgba(148, 163, 184, 0.2);
         border-radius: 8px;
         padding: 12px;
         text-align: center;
@@ -144,10 +146,11 @@ if "messages" not in st.session_state:
 
 # ----------------- SIDEBAR -----------------
 with st.sidebar:
-    st.image(
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Indian_Space_Research_Organisation_Logo.svg/200px-Indian_Space_Research_Organisation_Logo.svg.png",
-        width=80,
-    )
+    logo_path = Path(__file__).resolve().parent / "assets" / "isro_logo.png"
+    if logo_path.exists():
+        st.image(str(logo_path), width=85)
+    else:
+        st.markdown("### 🛰️")
     st.markdown("### 🛰️ BhuvanGeo-RAG")
     st.caption("National Remote Sensing Centre (NRSC) / ISRO")
 
@@ -211,12 +214,11 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-tab_chat, tab_sensors, tab_library, tab_system = st.tabs(
+tab_chat, tab_sensors, tab_library = st.tabs(
     [
         "💬 Mission Intelligence Chat",
         "🔍 Sensor Comparison & Specs",
         "📚 Ingested Document Library",
-        "⚙️ Architecture & Diagnostics",
     ]
 )
 
@@ -400,33 +402,4 @@ with tab_library:
     else:
         st.info("Manifest file not found. Documents will appear after initial ingestion.")
 
-
-# ==================== TAB 4: ARCHITECTURE ====================
-with tab_system:
-    st.subheader("⚙️ System Architecture & Engineering Diagnostics")
-
-    col_a, col_b = st.columns(2)
-    with col_a:
-        st.markdown(
-            """
-            ### Technical Stack
-            - **PDF Extraction:** `PyMuPDF` (High-speed C-native text parsing & coordinate tracking)
-            - **Embeddings:** `sentence-transformers/all-MiniLM-L6-v2` (384-dimensional dense vectors, CPU-optimized)
-            - **Vector Database:** `ChromaDB` (Persistent, serverless, local SQLite + HNSW index)
-            - **RAG Architecture:** Dense semantic retrieval + grounded extractive synthesis fallback
-            - **Interface:** `Streamlit` (Interactive stateful web app)
-            - **Zero Paid APIs:** Completely runnable offline on local CPU hardware
-            """
-        )
-
-    with col_b:
-        st.markdown(
-            """
-            ### Anti-Hallucination Guardrails
-            1. **Similarity Confidence Filter:** Queries yielding top distance below threshold are rejected with explicit insufficiency notice.
-            2. **Mandatory Excerpt Attribution:** Every factual claim cites document name, page number, and literal excerpt.
-            3. **Verified Sensor Catalog:** Hardened catalog of official ISRO parameters with strict verification flags.
-            4. **Idempotent Ingestion:** Deterministic chunk hashing prevents duplicate embeddings on re-runs.
-            """
-        )
 
