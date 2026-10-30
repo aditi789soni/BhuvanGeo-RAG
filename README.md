@@ -1,5 +1,6 @@
 # 🛰️ BhuvanGeo-RAG: Multimodal Geospatial Document & Mission Intelligence Assistant
 
+[![GitHub Repo](https://img.shields.io/badge/GitHub-Repository-181717?style=flat&logo=github)](https://github.com/aditi789soni/BhuvanGeo-RAG)
 [![ISRO EO Missions](https://img.shields.io/badge/ISRO-Earth%20Observation-FF9933?style=flat&logo=satellite)](https://www.isro.gov.in)
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue?style=flat&logo=python)](https://www.python.org/)
 [![Vector DB: ChromaDB](https://img.shields.io/badge/VectorDB-ChromaDB-purple?style=flat)](https://www.trychroma.com/)
