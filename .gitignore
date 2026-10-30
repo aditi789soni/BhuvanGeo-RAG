@@ -31,10 +31,6 @@ venv/
 .env
 .env.local
 
-# Vector Database (local Chroma storage can be generated)
-chroma_db/
-*.sqlite3
-
 # Streamlit
 .streamlit/secrets.toml
 
