@@ -1,0 +1,56 @@
+{
+  "collection_title": "ISRO & NRSC Official Mission Documentation",
+  "total_documents": 5,
+  "documents": [
+    {
+      "id": "resourcesat_2_handbook",
+      "title": "NRSC / ISRO Resourcesat-2 Data Users' Handbook (Doc No: NRSC:SDAPSA:NDC:DEC11-364)",
+      "filename": "NRSC_ISRO_Resourcesat-2_Data_Users_Handbook.pdf",
+      "category": "Resourcesat",
+      "description": "Comprehensive 142-page official technical handbook compiled by NRSC / ISRO detailing LISS-IV, LISS-III, and AWiFS sensor specifications, calibration, and data products.",
+      "primary_url": "https://earth.esa.int/eogateway/documents/20142/37627/ResourceSat-2-Data-User-Handbook.pdf",
+      "downloaded": true,
+      "path": "C:\\Users\\adite\\OneDrive\\Desktop\\BhuvanGeo-RAG\\data\\documents\\NRSC_ISRO_Resourcesat-2_Data_Users_Handbook.pdf"
+    },
+    {
+      "id": "cartosat1_dem_bhuvan",
+      "title": "NRSC / Bhuvan Cartosat-1 Stereo Data & CartoDEM Generation Technical Guide",
+      "filename": "NRSC_Bhuvan_Cartosat1_DEM_Generation.pdf",
+      "category": "Cartosat",
+      "description": "Official NRSC / Bhuvan technical guide detailing Cartosat-1 Fore (+26\u00b0) and Aft (-5\u00b0) stereo panchromatic cameras, along-track stereoscopy, and high-precision CartoDEM extraction.",
+      "primary_url": "https://bhuvan-app3.nrsc.gov.in/data/download/tools/document/SISDP-DEM-GENERATION-BHUVAN.pdf",
+      "downloaded": true,
+      "path": "C:\\Users\\adite\\OneDrive\\Desktop\\BhuvanGeo-RAG\\data\\documents\\NRSC_Bhuvan_Cartosat1_DEM_Generation.pdf"
+    },
+    {
+      "id": "oceansat2_oscat_bhuvan",
+      "title": "NRSC / Bhuvan Oceansat-2 Scatterometer (OSCAT) Global Wind Fields Technical Report",
+      "filename": "NRSC_Bhuvan_Oceansat2_OSCAT_Winds.pdf",
+      "category": "Oceansat",
+      "description": "Official NRSC documentation detailing Oceansat-2 OSCAT Ku-band radar scatterometer observations, daily composite wind vectors, OCM synergy, and oceanic meteorology.",
+      "primary_url": "https://bhuvan-app3.nrsc.gov.in/data/download/tools/document/Oscat_Global_composites_Bhuvan_winds.pdf",
+      "downloaded": true,
+      "path": "C:\\Users\\adite\\OneDrive\\Desktop\\BhuvanGeo-RAG\\data\\documents\\NRSC_Bhuvan_Oceansat2_OSCAT_Winds.pdf"
+    },
+    {
+      "id": "cartosat_2_series_c40",
+      "title": "ISRO Cartosat-2 Series Mission Brochure (PSLV-C40)",
+      "filename": "ISRO_Cartosat-2_Series_PSLV-C40_Brochure.pdf",
+      "category": "Cartosat",
+      "description": "Official ISRO publication on Cartosat-2 series spacecraft, high-resolution Panchromatic (PAN) and Multispectral (MX) imaging, and cartography applications.",
+      "primary_url": "https://www.isro.gov.in/media_isro/pdf/Publications/Brochures/PSLVC40Cartosat2SeriesMission.pdf",
+      "downloaded": true,
+      "path": "C:\\Users\\adite\\OneDrive\\Desktop\\BhuvanGeo-RAG\\data\\documents\\ISRO_Cartosat-2_Series_PSLV-C40_Brochure.pdf"
+    },
+    {
+      "id": "cartosat_2_series_c37",
+      "title": "ISRO Cartosat-2 Series Satellite Brochure (PSLV-C37)",
+      "filename": "ISRO_Cartosat-2_Series_PSLV-C37_Brochure.pdf",
+      "category": "Cartosat",
+      "description": "Official ISRO publication on Cartosat-2 series satellite, agile roll/pitch steering, urban mapping, and land information systems.",
+      "primary_url": "https://www.isro.gov.in/media_isro/pdf/Publications/Brochures/PSLV-C37.pdf",
+      "downloaded": true,
+      "path": "C:\\Users\\adite\\OneDrive\\Desktop\\BhuvanGeo-RAG\\data\\documents\\ISRO_Cartosat-2_Series_PSLV-C37_Brochure.pdf"
+    }
+  ]
+}

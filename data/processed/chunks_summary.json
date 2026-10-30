@@ -1,0 +1,40 @@
+{
+  "total_chunks": 687,
+  "newly_added_chunks": 687,
+  "documents": [
+    {
+      "filename": "ISRO_Cartosat-2_Series_PSLV-C37_Brochure.pdf",
+      "chunks_count": 0,
+      "file_size_kb": 3331.58
+    },
+    {
+      "filename": "ISRO_Cartosat-2_Series_PSLV-C40_Brochure.pdf",
+      "chunks_count": 23,
+      "file_size_kb": 1223.08
+    },
+    {
+      "filename": "NRSC_Bhuvan_Cartosat1_DEM_Generation.pdf",
+      "chunks_count": 61,
+      "file_size_kb": 906.19
+    },
+    {
+      "filename": "NRSC_Bhuvan_Oceansat2_OSCAT_Winds.pdf",
+      "chunks_count": 79,
+      "file_size_kb": 3679.68
+    },
+    {
+      "filename": "NRSC_ISRO_Resourcesat-2_Data_Users_Handbook.pdf",
+      "chunks_count": 524,
+      "file_size_kb": 12248.78
+    }
+  ],
+  "collection_stats": {
+    "total_chunks": 687,
+    "documents": {
+      "ISRO_Cartosat-2_Series_PSLV-C40_Brochure.pdf": 23,
+      "NRSC_Bhuvan_Cartosat1_DEM_Generation.pdf": 61,
+      "NRSC_Bhuvan_Oceansat2_OSCAT_Winds.pdf": 79,
+      "NRSC_ISRO_Resourcesat-2_Data_Users_Handbook.pdf": 524
+    }
+  }
+}
